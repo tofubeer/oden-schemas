@@ -1,6 +1,7 @@
 /*This file was created for Terratap-Technologies-Inc by Cody Clattenburg, Sam Collins, Martin Suryadi, and Sergio Josue Villegas. This file is under the protection of the Apache 2.0 License.*/
 
 {
+  "type": "Feature",
   "geometry": {
     "coordinates": {
       "items": {
