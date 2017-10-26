@@ -24,12 +24,12 @@
 		"name": {
 			"type": "string",
 			"example": "Bob's Charging Station",
-			"default": "Name Unavailible"
+			"default": "Name Unavailable"
 		},
 		"address": {
 			"type": "string",
 			"example": "123 West Rd",
-			"default": "Address Unavailible"
+			"default": "Address Unavailable"
 		},
 		"access": {
 			"type": "string",
