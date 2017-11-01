@@ -2,6 +2,11 @@
 {
 	"type": "Feature",
 	"geometry": {
+		"type": {
+			"type": "String",
+			"example": "Point",
+			"description": "This indicates that the voting location is geologically a Point."
+		},
 		"coordinates": {
 			"items": {
 				"type": "float",
@@ -9,11 +14,6 @@
 			},
 			"type": "array",
 			"example": [49.222, -122.222]
-		},
-		"type": {
-			"type": "String",
-			"example": "Point",
-			"description": "This indicates that the voting location is geologically a Point."
 		}
 	},
 	"properties": {
