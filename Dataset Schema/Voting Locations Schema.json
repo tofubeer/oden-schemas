@@ -17,12 +17,12 @@
 		}
 	},
 	"properties": {
-		"name": {
+		"nm": {
 			"type": "string",
 			"example": "Bob West Elementary (gymnasium)",
 			"default": "Name Unavailable"
 		},
-		"address": {
+		"adr": {
 			"type": "string",
 			"example": "123 West Rd",
 			"default": "Address Unavailable"

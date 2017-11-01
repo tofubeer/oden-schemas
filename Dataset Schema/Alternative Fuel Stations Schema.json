@@ -17,21 +17,21 @@
 		}
 	},
 	"properties": {
-		"fuelType": {
+		"fT": {
 			"type": "string",
 			"example": "Hydrogen"
 		},
-		"name": {
+		"nm": {
 			"type": "string",
 			"example": "Bob's Charging Station",
 			"default": "Name Unavailable"
 		},
-		"address": {
+		"adr": {
 			"type": "string",
 			"example": "123 West Rd",
 			"default": "Address Unavailable"
 		},
-		"access": {
+		"ac": {
 			"type": "string",
 			"example": "City Vehicle use only",
 			"default": "Public"

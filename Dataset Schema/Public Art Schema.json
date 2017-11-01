@@ -17,27 +17,27 @@
 		}
 	},
 	"properties": {
-		"name": {
+		"nm": {
 			"type": "string",
 			"example": "Bobs Statue",
 			"default": "Name Unavailable"
 		},
-		"artist": {
+		"aNm": {
 			"type": "string",
 			"example": "Bob Williams",
 			"default": "Artist Name Unavailable"
 		},
-		"summary": {
+		"summ": {
 			"type": "string",
 			"example": "A large statue of Bob.",
 			"default": "Summary Unavailable"
 		},
-		"description": {
+		"desc": {
 			"type": "string",
 			"example": "Bobs statue is the largest in the world. It was first built in 1995.",
 			"default": "Description Unavailable"
 		},
-		"address": {
+		"adr": {
 			"type": "string",
 			"example": "123 West Rd",
 			"default": "Address Unavailable"

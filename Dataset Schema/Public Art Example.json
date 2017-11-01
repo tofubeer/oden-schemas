@@ -8,11 +8,11 @@
 		,"coordinates":[49.1236, -122.814003]
 	}
 	,"properties": {
-		"name": "Bobs Statue"
-		,"artist": "Bob Williams"
-		,"summary": "A large statue of Bob."
-		,"description": "Bobs statue is the largest in the world. It was first built in 1995."
-		,"address": "123 West Rd"
+		"nm": "Bobs Statue"
+		,"aNm": "Bob Williams"
+		,"summ": "A large statue of Bob."
+		,"desc": "Bobs statue is the largest in the world. It was first built in 1995."
+		,"adr": "123 West Rd"
 	}
 }
 ,{
@@ -22,11 +22,11 @@
 		,"coordinates":[49.1725998, -122.7789993]
 	}
 	,"properties": {
-		"name": "Williams Statue"
-		,"artist": "William Bobberson"
-		,"summary": "A large statue of William."
-		,"description": "Williams statue is the smallest in the world. It was first built in 1990."
-		,"address": "312 East Rd"
+		"nm": "Williams Statue"
+		,"aNm": "William Bobberson"
+		,"summ": "A large statue of William."
+		,"desc": "Williams statue is the smallest in the world. It was first built in 1990."
+		,"adr": "312 East Rd"
 	}
 }
 ]

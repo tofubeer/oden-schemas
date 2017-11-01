@@ -8,8 +8,8 @@
 		,"coordinates": [49.14698925800, -122.84060078600]
 	}
 	,"properties": {
-		"name": "Bear Creek Elementary"
-		,"address": "13780 80 Ave"
+		"nm": "Bear Creek Elementary"
+		,"adr": "13780 80 Ave"
 	}
 }
 ,{
@@ -19,8 +19,8 @@
 		,"coordinates": [49.17282788400, -122.79682905600]
 	}
 	,"properties": {
-		"name": "Berkshire Park Elementary"
-		,"address": "15372 94 Ave"
+		"nm": "Berkshire Park Elementary"
+		,"adr": "15372 94 Ave"
 	}
 }
 ,{
@@ -30,8 +30,8 @@
 		,"coordinates": [49.18732149600, -122.74891722800]
 	}
 	,"properties": {
-		"name": "Bothwell Elementary"
-		,"address": "17070 102 Ave"
+		"nm": "Bothwell Elementary"
+		,"adr": "17070 102 Ave"
 	}
 }
 ]
