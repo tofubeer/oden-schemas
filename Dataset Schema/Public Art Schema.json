@@ -27,6 +27,11 @@
 			"example": "Bob Williams",
 			"default": "Artist Name Unavailable"
 		},
+		"type": {
+			"type": "string",
+			"example": "Painting",
+			"default": "Art Type Unavailable"
+		},
 		"summ": {
 			"type": "string",
 			"example": "A large statue of Bob.",

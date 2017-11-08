@@ -10,6 +10,7 @@
 	,"properties": {
 		"nm": "Bobs Statue"
 		,"aNm": "Bob Williams"
+		,"type": "Monument"
 		,"summ": "A large statue of Bob."
 		,"desc": "Bobs statue is the largest in the world. It was first built in 1995."
 		,"adr": "123 West Rd"
@@ -22,10 +23,11 @@
 		,"coordinates":[49.1725998, -122.7789993]
 	}
 	,"properties": {
-		"nm": "Williams Statue"
+		"nm": "Williams Painting"
 		,"aNm": "William Bobberson"
-		,"summ": "A large statue of William."
-		,"desc": "Williams statue is the smallest in the world. It was first built in 1990."
+		,"type": "Painting"
+		,"summ": "A small Painting of William."
+		,"desc": "Williams Painting is the smallest in the world. It was painted in 1990."
 		,"adr": "312 East Rd"
 	}
 }
