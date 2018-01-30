@@ -1,0 +1,34 @@
+{
+  "type": "Feature",
+  "geometry": {
+    "type": {
+      "type": "String",
+      "example": "Point",
+      "description": "This indicates that the Bus Route Bus Stops as geologically a Points."
+    },
+    "cordinates": {
+      "items": {
+        "type": "float",
+        "example": 49.222
+      },
+      "type": "array",
+      "example": [
+        [ -122.92898869812124, 49.19489568573479 ],
+        [ -122.92739850247958, 49.19481519652732 ],
+        [ -122.92701139561754, 49.194445560028846 ],
+        [ -122.9280128570366, 49.19403086594408 ]
+      ]
+    }
+  },
+  "properties": {
+    "Length": {
+      "type": "number",
+      "example": "632.67204431"
+    },
+    "Line_Number": {
+      "description": "Bus Route Number",
+      "type": "integer",
+      "example": "104"
+    }
+  }
+}

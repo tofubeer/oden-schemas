@@ -1,0 +1,34 @@
+[
+  {
+    "type": "Feature"
+  ,"geometry": {
+    "type": "Point"
+  ,"coordinates":[ -122.89633053629208, 49.23079261803334 ]
+  }
+  ,"properties": {
+    "On_Street": "E 8th Ave"
+  ,"Cross_Street": "Buchanan Ave"
+  ,"Bus_Stop_Number": 50576
+  ,"Direction": "NB"
+  ,"City_Name": "NEW WESTMINSTER"
+  ,"Accessible": "yes"
+
+  }
+  }
+,{
+  "type": "Feature"
+,"geometry": {
+    "type": "Point"
+  ,"coordinates":[49.1725998, -122.7789993]
+  }
+,"properties": {
+    "On_Street": "E 8th Ave"
+  ,"Cross_Street": "Buchanan Ave"
+  ,"Bus_Stop_Number": 53576
+  ,"Direction": "SB"
+  ,"City_Name": "NEW WESTMINSTER"
+  ,"Accessible": "No"
+
+  }
+}
+]

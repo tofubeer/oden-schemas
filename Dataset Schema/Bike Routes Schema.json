@@ -1,0 +1,43 @@
+{
+  "type": "Feature",
+  "geometry": {
+    "type": {
+      "type": "String",
+      "example": "Point",
+      "description": "This indicates that the Bike Routes is geologically a Points."
+    },
+    "cordinates": {
+      "items": {
+        "type": "float",
+        "example": 49.222
+      },
+      "type": "array",
+      "example": [
+        [49.222, -122.222],
+        [48.222, -121.222],
+        [47.222, -120.222]
+      ]
+    }
+  },
+  "properties": {
+    "Paved": {
+      "type": "string",
+      "example": "Yes"
+    },
+    "Name": {
+      "type": "string",
+      "example": "LDG",
+      "default": "Name Unavailable"
+    },
+    "Bike_Lane": {
+      "type": "string",
+      "example": "Yes"
+
+    },
+    "Bike": {
+      "type": "string",
+      "example": "Yes"
+    }
+  }
+}
+

@@ -1,0 +1,54 @@
+[
+  {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        [
+          49.222,
+          -122.222
+        ],
+        [
+          48.222,
+          -121.222
+        ],
+        [
+          47.222,
+          -120.222
+        ]
+      ]
+    },
+    "properties": {
+      "Paved": "Yes",
+      "Name": "CG",
+      "Bike_Lane": "No",
+      "Bike": "Yes"
+    }
+  }
+,  {
+  "type": "Feature",
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      [
+        49.222,
+        -122.222
+      ],
+      [
+        48.222,
+        -121.222
+      ],
+      [
+        47.222,
+        -120.222
+      ]
+    ]
+  },
+  "properties": {
+    "Paved": "Yes",
+    "Name": "BCP",
+    "Bike_Lane": "No",
+    "Bike": "Yes"
+  }
+}
+]

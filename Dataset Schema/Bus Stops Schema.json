@@ -1,0 +1,44 @@
+{
+  "type": "Feature",
+  "geometry": {
+    "type": {
+      "type": "String",
+      "example": "Point",
+      "description": "This indicates that the station is geologically a Point."
+    },
+    "coordinates": {
+      "items": {
+        "type": "float",
+        "example": 49.222
+      },
+      "type": "array",
+      "example": [49.222, -122.222]
+    }
+  },
+  "properties": {
+    "On_Street": {
+      "type": "string",
+      "example": "E 8th Ave"
+    },
+    "Cross_Street": {
+      "type": "string",
+      "example": "Buchanan Ave"
+    },
+    "Bus_Stop_Number": {
+      "type": "integer",
+      "example": 53576
+    },
+    "Direction": {
+      "type": "string",
+      "example": "SB"
+    },
+    "City_Name": {
+      "type": "string",
+      "example": "NEW WESTMINSTER"
+    },
+    "Accessible": {
+      "type": "string",
+      "example": "No"
+    }
+  }
+}
