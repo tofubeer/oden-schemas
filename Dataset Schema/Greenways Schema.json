@@ -4,7 +4,7 @@
     "type": {
       "type": "String",
       "example": "Point",
-      "description": "This indicates that the Bike Routes is geologically a Points."
+      "description": "This indicates that the Greenways as geologically a Points."
     },
     "coordinates": {
       "items": {
@@ -13,30 +13,30 @@
       },
       "type": "array",
       "example": [
-        [49.222, -122.222],
-        [48.222, -121.222],
+        [ -122.95759787805977, 49.20105168346303 ],
+        [ -122.95647309982671, 49.20166130033205 ],
         [47.222, -120.222]
       ]
     }
   },
   "properties": {
-    "paved": {
-      "type": "string",
-      "example": "Yes"
-    },
     "name": {
       "type": "string",
-      "example": "LDG",
+      "example": "LDG"
+    },
+    "full_name": {
+      "type": "string",
+      "example": "London Dublin Greenway",
       "default": "Name Unavailable"
     },
-    "bike_lane": {
-      "type": "string",
-      "example": "Yes"
+    "length": {
+      "type": "number",
+      "example": 2745.3368253063154
 
     },
-    "bike": {
-      "type": "string",
-      "example": "Yes"
+    "id": {
+      "type": "integer",
+      "example": 1
     }
   }
 }

@@ -6,7 +6,7 @@
       "example": "Point",
       "description": "This indicates that the Bus Route Bus Stops as geologically a Points."
     },
-    "cordinates": {
+    "coordinates": {
       "items": {
         "type": "float",
         "example": 49.222
@@ -21,11 +21,11 @@
     }
   },
   "properties": {
-    "Length": {
+    "length": {
       "type": "number",
       "example": "632.67204431"
     },
-    "Line_Number": {
+    "line_number": {
       "description": "Bus Route Number",
       "type": "integer",
       "example": "104"

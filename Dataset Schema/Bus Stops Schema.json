@@ -16,27 +16,27 @@
     }
   },
   "properties": {
-    "On_Street": {
+    "on_street": {
       "type": "string",
       "example": "E 8th Ave"
     },
-    "Cross_Street": {
+    "cross_street": {
       "type": "string",
       "example": "Buchanan Ave"
     },
-    "Bus_Stop_Number": {
+    "bus_stop_number": {
       "type": "integer",
       "example": 53576
     },
-    "Direction": {
+    "direction": {
       "type": "string",
       "example": "SB"
     },
-    "City_Name": {
+    "city_name": {
       "type": "string",
       "example": "NEW WESTMINSTER"
     },
-    "Accessible": {
+    "accessible": {
       "type": "string",
       "example": "No"
     }

@@ -19,10 +19,10 @@
       ]
     },
     "properties": {
-      "Paved": "Yes",
-      "Name": "CG",
-      "Bike_Lane": "No",
-      "Bike": "Yes"
+      "paved": "Yes",
+      "name": "CG",
+      "bike_lane": "No",
+      "bike": "Yes"
     }
   }
 ,  {
@@ -45,10 +45,10 @@
     ]
   },
   "properties": {
-    "Paved": "Yes",
-    "Name": "BCP",
-    "Bike_Lane": "No",
-    "Bike": "Yes"
+    "paved": "Yes",
+    "name": "BCP",
+    "bike_lane": "No",
+    "bike": "Yes"
   }
 }
 ]

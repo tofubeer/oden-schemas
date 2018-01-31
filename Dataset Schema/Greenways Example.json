@@ -19,8 +19,10 @@
       ]
     },
     "properties": {
+      "name":"LDG",
+      "full_name":"London Dublin Greenway",
       "length": 1770.92735774,
-      "line_number": 104
+      "id": 1
     }
   }
 ,  {
@@ -84,8 +86,10 @@
     ]
   },
   "properties": {
-    "length": 17210.92735774,
-    "line_number": 102
+    "name":"CVG",
+    "full_name":"Central Valley Greenway",
+    "length": 5444.171850206793,
+    "id": 2
   }
 }
 ]
