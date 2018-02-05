@@ -4,7 +4,7 @@
     "type": {
       "type": "String",
       "example": "Point",
-      "description": "This indicates that the Greenways as geologically a Points."
+      "description": "This indicates that the Greenways as geologically a Points.It can be Point, LineString, MultiLineString"
     },
     "coordinates": {
       "items": {

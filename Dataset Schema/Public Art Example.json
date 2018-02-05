@@ -8,12 +8,23 @@
 		,"coordinates":[49.1236, -122.814003]
 	}
 	,"properties": {
-		"nm": "Bobs Statue"
-		,"aNm": "Bob Williams"
-		,"type": "Monument"
-		,"summ": "A large statue of Bob."
-		,"desc": "Bobs statue is the largest in the world. It was first built in 1995."
-		,"adr": "123 West Rd"
+		"Website": "www.funtimes.com"
+		,"KmlName": "Pump House Mural"
+		,"Address": "123 walker lane"
+		,"Address2": "unit 500"
+		,"City": "New Westminster"
+		,"Province": "BC"
+		,"PostalCode": "V3L 4E8"
+		,"Phone": 1234567891
+		,"Name": "Pump House Mural"
+		,"Description": "\"Puzzled,\" (2013) by artist Steve Hornung brightens the side of an otherwise drab pump house. The mural features a boy with a slingshot, three moose, and interlocking puzzle pieces."
+		,"Id": "329"
+		,"Category": 6
+		,"Company": "Nike"
+		,"FaxNumber": 1234567891
+		,"Email": "John@gmail.com"
+		,"Summary": "\"Puzzled,\" (2013) by artist Steve Hornung brightens the side of an otherwise drab pump house. The mural features a boy with a slingshot, three moose, and interlocking puzzle pieces."
+		,"CatName": "Public Art/Monuments"
 	}
 }
 ,{
@@ -23,12 +34,23 @@
 		,"coordinates":[49.1725998, -122.7789993]
 	}
 	,"properties": {
-		"nm": "Williams Painting"
-		,"aNm": "William Bobberson"
-		,"type": "Painting"
-		,"summ": "A small Painting of William."
-		,"desc": "Williams Painting is the smallest in the world. It was painted in 1990."
-		,"adr": "312 East Rd"
+		"Website": "www.funtimes.com"
+	,"KmlName": "Pump House Mural"
+	,"Address": "123 walker lane"
+	,"Address2": "unit 500"
+	,"City": "New Westminster"
+	,"Province": "BC"
+	,"PostalCode": "V3L 4E8"
+	,"Phone": 1234567891
+	,"Name": "Pump House Mural"
+	,"Description": "\"Puzzled,\" (2013) by artist Steve Hornung brightens the side of an otherwise drab pump house. The mural features a boy with a slingshot, three moose, and interlocking puzzle pieces."
+	,"Id": "329"
+	,"Category": 6
+	,"Company": "Nike"
+	,"FaxNumber": 1234567891
+	,"Email": "John@gmail.com"
+	,"Summary": "\"Puzzled,\" (2013) by artist Steve Hornung brightens the side of an otherwise drab pump house. The mural features a boy with a slingshot, three moose, and interlocking puzzle pieces."
+	,"CatName": "Public Art/Monuments"
 	}
 }
 ]

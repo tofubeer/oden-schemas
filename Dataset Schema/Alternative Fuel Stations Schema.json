@@ -5,7 +5,7 @@
 		"type": {
 			"type": "String",
 			"example": "Point",
-			"description": "This indicates that the station is geologically a Point."
+			"description": "This indicates that the station is geologically a Point.It can be Point, LineString, MultiLineString"
 		},
 		"coordinates": {
 			"items": {
@@ -36,6 +36,6 @@
 			"example": "City Vehicle use only",
 			"default": "Public"
 		}
-	},
+	}
 }
-"type": "object"
+

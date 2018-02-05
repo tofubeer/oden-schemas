@@ -5,7 +5,7 @@
 		"type": {
 			"type": "String",
 			"example": "Point",
-			"description": "This indicates that the voting location is geologically a Point."
+			"description": "This indicates that the station is geologically a Point.It can be Point, LineString, MultiLineString"
 		},
 		"coordinates": {
 			"items": {
@@ -17,36 +17,74 @@
 		}
 	},
 	"properties": {
-		"nm": {
+		"Website": {
 			"type": "string",
-			"example": "Bobs Statue",
-			"default": "Name Unavailable"
+			"example": "www.google.com"
 		},
-		"aNm": {
+		"KmlName": {
 			"type": "string",
-			"example": "Bob Williams",
-			"default": "Artist Name Unavailable"
+			"example": "Pump House Mural"
 		},
-		"type": {
+		"Address": {
 			"type": "string",
-			"example": "Painting",
-			"default": "Art Type Unavailable"
+			"example": "123 West Rd"
 		},
-		"summ": {
+		"Address2": {
 			"type": "string",
-			"example": "A large statue of Bob.",
-			"default": "Summary Unavailable"
+			"example": "Unit 500"
 		},
-		"desc": {
+		"City": {
 			"type": "string",
-			"example": "Bobs statue is the largest in the world. It was first built in 1995.",
-			"default": "Description Unavailable"
+			"example":"New Westminster"
 		},
-		"adr": {
+		"Providence": {
 			"type": "string",
-			"example": "123 West Rd",
-			"default": "Address Unavailable"
+			"example": "BC"
+		},
+		"PostalCode": {
+			"type": "string",
+			"example": "5V6 3E8"
+		},
+		"PhoneNumber": {
+			"type": "integer",
+			"example": 1234567891
+		},
+		"Name": {
+			"type": "string",
+			"example": "Pump House Mural"
+		},
+		"Description": {
+			"type": "string",
+			"example": "\"Puzzled,\" (2013) by artist Steve Hornung brightens the side of an otherwise drab pump house. The mural features a boy with a slingshot, three moose, and interlocking puzzle pieces."
+		},
+		"Id": {
+			"type": "string",
+			"example": "231"
+		},
+		"Category":{
+			"type": "integer",
+			"example": 6
+		},
+		"Company": {
+			"type": "string",
+			"example": "Nike"
+		},
+		"FaxNumber": {
+			"type": "integer",
+			"example": 1234567891
+		},
+		"Email": {
+			"type": "string",
+			"example": "joe@gmail.com"
+		},
+		"Summary": {
+			"type": "string",
+			"example": "\"Puzzled,\" (2013) by artist Steve Hornung brightens the side of an otherwise drab pump house. The mural features a boy with a slingshot, three moose, and interlocking puzzle pieces."
+		},
+		"CatName": {
+			"type": "string",
+			"example": "Public Art/Monuments"
 		}
-	},
+	}
 }
-"type": "object"
+

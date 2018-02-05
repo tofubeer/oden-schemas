@@ -3,8 +3,8 @@
   "geometry": {
     "type": {
       "type": "String",
-      "example": "Point",
-      "description": "This indicates that the Bike Routes is geologically a Points."
+      "example": "LineString",
+      "description": "This indicates that the Bike Routes is geologically a Points. It can be Point, LineString, MultiLineString"
     },
     "coordinates": {
       "items": {
@@ -13,30 +13,40 @@
       },
       "type": "array",
       "example": [
-        [49.222, -122.222],
-        [48.222, -121.222],
-        [47.222, -120.222]
+        [49.222, -122.222]
       ]
     }
   },
   "properties": {
-    "paved": {
+    "Status": {
+      "type": "string",
+      "example":"Existing"
+    },
+    "Paved": {
       "type": "string",
       "example": "Yes"
     },
-    "name": {
+    "Name": {
       "type": "string",
       "example": "LDG",
       "default": "Name Unavailable"
     },
-    "bike_lane": {
+    "OnStreet": {
       "type": "string",
-      "example": "Yes"
+      "example": "Y"
 
     },
-    "bike": {
+    "OffStreet": {
       "type": "string",
-      "example": "Yes"
+      "example": "Y"
+    },
+    "Lane": {
+      "type": "string",
+      "example":"N"
+    },
+    "Distance": {
+      "type": "number",
+      "example": 367.000123
     }
   }
 }

@@ -4,7 +4,7 @@
     "type": {
       "type": "String",
       "example": "Point",
-      "description": "This indicates that the station is geologically a Point."
+      "description": "This indicates that the station is geologically a Point.It can be Point, LineString, MultiLineString"
     },
     "coordinates": {
       "items": {
@@ -16,29 +16,33 @@
     }
   },
   "properties": {
-    "on_street": {
+    "OnStreet": {
       "type": "string",
       "example": "E 8th Ave"
     },
-    "cross_street": {
+    "CrossStreet": {
       "type": "string",
       "example": "Buchanan Ave"
     },
-    "bus_stop_number": {
+    "BusStopNumber": {
       "type": "integer",
       "example": 53576
     },
-    "direction": {
+    "Direction": {
       "type": "string",
       "example": "SB"
     },
-    "city_name": {
+    "CityName": {
       "type": "string",
       "example": "NEW WESTMINSTER"
     },
-    "accessible": {
+    "Accessible": {
       "type": "string",
       "example": "No"
+    },
+    "Status": {
+      "type": "string",
+      "example": "ACTIVE"
     }
   }
 }

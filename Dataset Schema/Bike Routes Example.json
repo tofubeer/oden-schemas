@@ -2,7 +2,7 @@
   {
     "type": "Feature",
     "geometry": {
-      "type": "Point",
+      "type": "LineString",
       "coordinates": [
         [
           49.222,
@@ -19,16 +19,19 @@
       ]
     },
     "properties": {
-      "paved": "Yes",
-      "name": "CG",
-      "bike_lane": "No",
-      "bike": "Yes"
+      "Status": "Existing",
+      "Paved": "Y",
+      "Name": "CG",
+      "OnStreet": "N",
+      "OffStreet": "Y",
+      "Lane": "Y",
+      "Distance": 369.56471
     }
   }
 ,  {
   "type": "Feature",
   "geometry": {
-    "type": "Point",
+    "type": "LineString",
     "coordinates": [
       [
         49.222,
@@ -45,10 +48,13 @@
     ]
   },
   "properties": {
-    "paved": "Yes",
-    "name": "BCP",
-    "bike_lane": "No",
-    "bike": "Yes"
+    "Status": "Existing",
+    "Paved": "Y",
+    "Name": "CYG",
+    "OnStreet": "N",
+    "OffStreet": "Y",
+    "Lane": "Y",
+    "Distance": 379.56471
   }
 }
 ]

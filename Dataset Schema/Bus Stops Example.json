@@ -6,12 +6,13 @@
   ,"coordinates":[ -122.89633053629208, 49.23079261803334 ]
   }
   ,"properties": {
-    "on_street": "E 8th Ave"
-  ,"cross_street": "Buchanan Ave"
-  ,"bus_stop_number": 50576
-  ,"direction": "NB"
-  ,"city_name": "NEW WESTMINSTER"
-  ,"accessible": "yes"
+    "OnStreet": "E 8th Ave"
+  ,"CrossStreet": "Buchanan Ave"
+  ,"BusStopNumber": 50576
+  ,"Direction": "NB"
+  ,"CityName": "NEW WESTMINSTER"
+  ,"Accessible": "yes"
+  ,"Status" : "ACTIVE"
 
   }
   }
@@ -22,12 +23,13 @@
   ,"coordinates":[49.1725998, -122.7789993]
   }
 ,"properties": {
-    "on_street": "E 8th Ave"
-  ,"cross_street": "Buchanan Ave"
-  ,"bus_stop_number": 53576
-  ,"direction": "SB"
-  ,"city_name": "NEW WESTMINSTER"
-  ,"accessible": "No"
+    "OnStreet": "E 8th Ave"
+  ,"CrossStreet": "Buchanan Ave"
+  ,"BusStopNumber": 50576
+  ,"Direction": "NB"
+  ,"CityName": "NEW WESTMINSTER"
+  ,"Accessible": "yes"
+  ,"Status" : "ACTIVE"
 
   }
 }
