@@ -24,7 +24,7 @@
       "type": "string",
       "example": "LDG"
     },
-    "full_name": {
+    "fullName": {
       "type": "string",
       "example": "London Dublin Greenway",
       "default": "Name Unavailable"

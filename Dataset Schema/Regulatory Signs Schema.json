@@ -1,0 +1,30 @@
+{
+  "type": "Feature",
+  "geometry": {
+    "type": {
+      "type": "String",
+      "example": "LineString",
+      "description": "This indicates that the Bike Routes is geologically a Points. It can be Point, LineString, MultiLineString"
+    },
+    "coordinates": {
+      "items": {
+        "type": "float",
+        "example": 49.222
+      },
+      "type": "array",
+      "example": [
+        [49.222, -122.222]
+      ]
+    }
+  },
+  "properties": {
+    "id": {
+      "type": "string",
+      "example":"3608"
+    },
+    "description": {
+      "type": "string",
+      "example": "4 ways"
+    }
+  }
+}
