@@ -1,6 +1,6 @@
 {
     "$schema": "http://json-schema.org/draft-07/schema",
-    "$id": "tbd",
+    "$id": "https://github.com/OpendataDeveloperNetwork/oden-schemas/blob/master/schemas/Active%20Development%20Applications.json",
     "title": "Active Development Applications",
     "description": "The active development applications of a city",
     "type": "array",
