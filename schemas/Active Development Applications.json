@@ -1,0 +1,78 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema",
+    "$id": "tbd",
+    "title": "Active Development Applications",
+    "description": "The active development applications of a city",
+    "type": "array",
+    "items": {
+        "type":"object",
+        "properties": {
+            "ApplicationType": {
+                "description": "The type of application being applied for",
+                "type": "string"
+            },
+            "InDate": {
+                "description": "Date application was submitted",
+                "type": "string",
+                "format": "date-time"
+            },
+            "ReferenceFile": {
+                "description": "Inernal reference file name",
+                "type": "string"
+            },
+            "Name": {
+                "description": "Name is a combination of reference file name and street address",
+                "type":"string"
+            },
+            "WorkProposed": {
+                "description": "A brief description of the type of work proposed",
+                "type": "string"
+            },
+            "Description": {
+                "description": "Describes the current stage the application process is in",
+                "type": "string"
+            },
+            "StatusCode": {
+                "description": "A code indicating the status of the application",
+                "type": "integer"
+            },
+            "ApplicationNumber": {
+                "description": "The application number",
+                "type": "integer"
+            },
+            "StatusDescription": {
+                "description": "The current status of the development application",
+                "type": "string"
+            },
+            "SubType": {
+                "description": "The application sub type, eg. Rural, Zoning",
+                "type": "string"
+            },
+            "NumberLots": {
+                "description": "The number of lots affected",
+                "type": "integer"
+            },
+            "UnitType": {
+                "description": "The type of unit",
+                "type": "string"
+            },
+            "Unit": {
+                "description": "Unit number",
+                "type": "integer"
+            },
+            "HouseNumber": {
+                "description": "The house number of the application location",
+                "type": "integer"
+            },
+            "Street": {
+                "description": "The street of the application location",
+                "type": "string"
+            },
+            "NeighbourhoodName": {
+                "description": "The name of the neighbourhood of the application location",
+                "type": "string"
+            }
+        },
+        "required": [ "ApplicationType", "InDate", "StatusDescription" ]
+    }
+}
