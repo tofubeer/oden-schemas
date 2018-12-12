@@ -1,0 +1,30 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema",
+  "$id": "",
+  "title": "Borrowing Bylaws",
+  "description": "Analysis of loan authorization bylaws and related amounts. A short description of the project and the total amount are included",
+  "type": "array",
+  "minItems": 1,
+  "items": {
+    "type": "object",
+    "required": [ "ByLawName", "BylawAmount" ],
+    "properties": {
+      "BylawNumber": {
+        "description": "The number denoting the bylaw",
+        "type": "string"
+      },
+      "BylawName": {
+        "description": "The name of the bylaw",
+        "type": "string"
+      },
+      "BylawDescription": {
+        "description": "A general description of the bylaw",
+        "type": "string"
+      },
+      "BylawAmount": {
+        "description": "The amount that was loaned",
+        "type": "number"
+      }
+    }
+  }
+}
