@@ -1,6 +1,6 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema",
-  "$id": "",
+  "$id": "https://github.com/OpendataDeveloperNetwork/oden-schemas/blob/master/schemas/Annual%20Property%20Tax%20Levies.json",
   "title": "Annual Property Tax Levies",
   "description": "The annual levies on property taxes in a given city",
   "type": "array",
