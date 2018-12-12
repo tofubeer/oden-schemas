@@ -1,6 +1,6 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema",
-  "$id": "",
+  "$id": "https://github.com/OpendataDeveloperNetwork/oden-schemas/blob/master/schemas/Borrowing%20Bylaws.json",
   "title": "Borrowing Bylaws",
   "description": "Analysis of loan authorization bylaws and related amounts. A short description of the project and the total amount are included",
   "type": "array",
