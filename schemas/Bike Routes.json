@@ -100,7 +100,7 @@
     },
     "featureCollection": {
       "title": "FeatureCollection",
-      "description": "A Geo JSON feature collection",
+      "description": "A GeoJSON feature collection",
       "required": [ "features", "type" ],
       "properties": {
         "type": {
