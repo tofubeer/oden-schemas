@@ -1,6 +1,6 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema",
-  "$id": "tbd",
+  "$id": "https://github.com/OpendataDeveloperNetwork/oden-schemas/blob/master/schemas/Agricultural%20Land%20Reserve.json",
   "title": "Agricultural Land Reserve",
   "description": "Land that has been labeled a priority for agriculture by the BC government",
   "type": "object",
@@ -22,7 +22,7 @@
           "$ref": "https://raw.githubusercontent.com/OpendataDeveloperNetwork/oden-schemas/master/schemas/geometry.json"
         },
         "properties": {
-          "required": [],
+          "required": [ "ShapeArea" ],
           "ShapeArea": {
             "description": "Area of the polygon denoting the land reserve",
             "type": "number"
