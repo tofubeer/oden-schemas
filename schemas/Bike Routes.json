@@ -1,53 +1,118 @@
 {
-  "type": "Feature",
-  "geometry": {
-    "type": {
-      "type": "String",
-      "example": "LineString",
-      "description": "This indicates that the Bike Routes is geologically a Points. It can be Point, LineString, MultiLineString"
-    },
-    "coordinates": {
-      "items": {
-        "type": "float",
-        "example": 49.222
-      },
-      "type": "array",
-      "example": [
-        [49.222, -122.222]
-      ]
+  "$schema": "http://json-schema.org/draft-07/schema",
+  "$id": "https://github.com/OpendataDeveloperNetwork/oden-schemas/blob/master/schemas/Bike%20Routes.json",
+  "title": "Bike Routes",
+  "description": "Bike Routes for a given city",
+  "type": "object",
+  "oneOf": [
+    {
+      "$ref": "#/definitions/featureCollection"
     }
-  },
-  "properties": {
-    "Status": {
-      "type": "string",
-      "example":"Existing"
+  ],
+  "definitions": {
+    "feature": {
+      "title": "Feature",
+      "description": "A Bike route feature",
+      "required": [ "geometry", "properties"],
+      "properties": {
+		    "properties": {
+          "required": [ ],
+          "Type": {
+            "description": "The type of bike route",
+            "type": "string"
+          },
+          "Name": {
+            "description": "Name of the bike route",
+            "type": "string"
+          },
+          "StreetKey": {
+            "description": "A unique key identifying the street",
+            "type": "string"
+          },
+          "StreetName": {
+            "description": "The name of the street the route is on",
+            "type": "string"
+          },
+          "SurfaceType": {
+            "description": "The type of surface the route is on",
+            "type": "string"
+          },
+          "RoadSide": {
+            "description": "The side of the road the route is located on",
+            "type": "string"
+          },
+          "ShapeSTLength": {
+            "description": "The shape length of the whole route",
+            "type": "number"
+          },
+          "YearCreated": {
+            "description": "The year the route went into service",
+            "type": "integer"
+          },
+          "AllAgesRoute": {
+            "description": "Is the route for all ages, Y or N",
+            "type": "string"
+          },
+          "Owner": {
+            "description": "The owner of the bike route",
+            "type": "string"
+          },
+          "NumberOfLanes": {
+            "description": "Number of lanes the bike route is",
+            "type": "integer"
+          },
+          "TotalLengthMetres": {
+            "description": "The length of the route in metres",
+            "type": "number"
+          },
+          "TotalLengthKM": {
+            "description": "The length of the route in kilometres",
+            "type": "number"
+          },
+          "Status": {
+            "description": "Status of the bike route, eg existing or not existing",
+            "type": "string"
+          },
+          "Paved": {
+            "description": "Is the road paved eg Y, N",
+            "type": "string"
+          },
+          "BikeOnStreet": {
+            "description": "Is the bike route on street, eg Y, N",
+            "type": "string"
+          },
+          "BikeOffStreet": {
+            "description": "Is the bike route off street, eg Y, N",
+            "type": "string"
+          },
+          "BikeLane": {
+            "description": "Is the bike route a lane, eg Y, N",
+            "type": "string"
+          }
+        },
+        "type": { 
+          "enum": [ "Feature" ]
+        },
+        "geometry": {
+          "$ref": "https://raw.githubusercontent.com/OpendataDeveloperNetwork/oden-schemas/master/schemas/geometry.json"
+        }
+      }
     },
-    "Paved": {
-      "type": "string",
-      "example": "Yes"
-    },
-    "Name": {
-      "type": "string",
-      "example": "LDG",
-      "default": "Name Unavailable"
-    },
-    "OnStreet": {
-      "type": "string",
-      "example": "Y"
-
-    },
-    "OffStreet": {
-      "type": "string",
-      "example": "Y"
-    },
-    "Lane": {
-      "type": "string",
-      "example":"N"
-    },
-    "Distance": {
-      "type": "number",
-      "example": 367.000123
+    "featureCollection": {
+      "title": "FeatureCollection",
+      "description": "A Geo JSON feature collection",
+      "required": [ "features", "type" ],
+      "properties": {
+        "type": {
+          "enum": [ "FeatureCollection" ]
+        },
+        "features": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/feature"
+          }
+        }
+      }
     }
   }
 }
-
