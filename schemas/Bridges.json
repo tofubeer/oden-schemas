@@ -1,0 +1,183 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema",
+  "$id": "",
+  "title": "Bridges",
+  "description": "Vehicle bridge within a given city",
+  "type": "object",
+  "oneOf": [
+    {
+      "$ref": "#/definitions/featureCollection"
+    }
+  ],
+  "definitions": {
+    "feature": {
+      "title": "Feature",
+      "description": "The location of a vehicle bridge",
+      "required": [
+        "geometry",
+        "properties"
+      ],
+      "properties": {
+        "type": {
+          "enum": [
+            "Feature"
+          ]
+        },
+        "geometry": {
+          "$ref": "https://raw.githubusercontent.com/OpendataDeveloperNetwork/oden-schemas/master/schemas/geometry.json"
+        },
+        "properties": {
+          "required": [ ],
+          "Name": {
+            "description": "The name of the bridge",
+            "type": "string"
+          },
+          "YearConstructed": {
+            "description": "The year the bridge was constructed",
+            "type": "integer"
+          },
+          "InstallDate": {
+            "description": "The fill date the bridge was installed",
+            "type": "string",
+            "format": "date-time"
+          },
+          "LifecycleStatus": {
+            "description": "The current status of the bridge as it relates to it's lifecycle eg. Active",
+            "type": "string"
+          },
+          "FeatureCrossed": {
+            "description": "The name of the feature the bridge crosses",
+            "type": "string"
+          },
+          "FeatureSuported": {
+            "description": "The street the bridge supports",
+            "type": "string"
+          },
+          "Location": {
+            "description": "The street number and name where the bridge is located eg. 2203 River Rd",
+            "type": "string"
+          },
+          "BridgeType": {
+            "description": "The materials the bridge is made out of",
+            "type": "string"
+          },
+          "Sidewalks": {
+            "description": "A short description of the sidewalks on the bridge or lack thereof",
+            "type": "string"
+          },
+          "UtilitiesPresent": {
+            "description": "A short description of any utility lines, if any, are supported on the bridge",
+            "type": "string"
+          },
+          "NumberOfLanes": {
+            "description": "The numbner of lanes on the bridge",
+            "type": "integer",
+            "minimum": 1
+          },
+          "PostedSpeedLimit": {
+            "description": "A short description of the speed limit on the bridge",
+            "type": "string"
+          },
+          "SymbolAngle": {
+            "description": "The angle of the symbol of the bridge",
+            "type": "number",
+            "minimum": 0,
+            "maximum": 360
+          },
+          "Subtype": {
+            "description": "Bridge subtype",
+            "type": "integer"
+          },
+          "RecordedLength": {
+            "description": "The recorded length of the bridge",
+            "type": "number"
+          },
+          "AssetOwner": {
+            "description": "The owner of the bridge",
+            "type": "string"
+          },
+          "AssetManager": {
+            "description": "The asset manager of the bridge",
+            "type": "string"
+          },
+          "Contractor": {
+            "description": "The contractor of the bridge",
+            "type": "string"
+          },
+          "RoadUse": {
+            "description": "The type of road usage of the bridge eg. Arterial",
+            "type": "string"
+          },
+          "Comments": {
+            "description": "A brief comment about the bridge",
+            "type": "string"
+          },
+          "IsOneWay": {
+            "descrpiton": "Is the bridge a one way bridge eg true, false",
+            "type": "boolean"
+          },
+          "PaintColor": {
+            "description": "The color the bridge was painted",
+            "type": "string"
+          },
+          "DeckWidth": {
+            "description": "The width of the deck",
+            "type": "number"
+          },
+          "TrafficType": {
+            "description": "The type of traffic that will cross the bridge",
+            "type": "string"
+          },
+          "CreatedUser": {
+            "description": "The user that created this dataset",
+            "type": "string"
+          },
+          "CreatedDate": {
+            "description": "The date this data was initially created",
+            "type": "string",
+            "format": "date-time"
+          },
+          "LastEditedUser": {
+            "description": "The name of the persron that last edited this date",
+            "type": "string"
+          },
+          "LastEditedDate": {
+            "description": "The date this data was last edited",
+            "type": "string",
+            "format": "date-time"
+          },
+          "ShapeLength": {
+            "description": "The shape length of the bridge",
+            "type": "number"
+          },
+          "ShapeArea": {
+            "description": "The area of the shape of the bridge",
+            "type": "number"
+          }
+        }
+      }
+    },
+    "featureCollection": {
+      "title": "FeatureCollection",
+      "description": "A GeoJSON feature collection",
+      "required": [
+        "features",
+        "type"
+      ],
+      "properties": {
+        "type": {
+          "enum": [
+            "FeatureCollection"
+          ]
+        },
+        "features": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "$ref": "#/definitions/feature"
+          }
+        }
+      }
+    }
+  }
+}
