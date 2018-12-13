@@ -1,6 +1,6 @@
 {
     "$schema": "http://json-schema.org/draft-07/schema",
-    "$id": "",
+    "$id": "https://github.com/OpendataDeveloperNetwork/oden-schemas/blob/master/schemas/Business%20Licences.json",
     "title": "Business Licences",
     "description": "Details for a business within a city that holds a business licence with that city",
     "type": "array",
@@ -8,8 +8,7 @@
     "items": {
         "type": "object",
         "required": [ 
-            "BusinessName",
-            "IssueDate"
+            "BusinessName"
         ],
         "properties": {
             "BusinessID": {
