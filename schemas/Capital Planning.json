@@ -1,6 +1,6 @@
 {
     "$schema": "http://json-schema.org/draft-07/schema",
-    "$id": "",
+    "$id": "https://github.com/OpendataDeveloperNetwork/oden-schemas/blob/master/schemas/Capital%20Planning.json",
     "title": "Capital Planning",
     "description": "Analysis of capital project budget by budget year and group",
     "type": "array",
