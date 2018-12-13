@@ -1,0 +1,152 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema",
+    "$id": "",
+    "title": "Building Permits",
+    "description": "A detailed view of building permits and permit applications",
+    "type": "array",
+    "items": {
+        "type": "object",
+        "required": [ 
+            "PermitNumber", 
+            "IssueDate", 
+            "PermitDescription", 
+            "StatusDescription", 
+            "WorkDescription"
+        ],
+        "properties": {
+            "GisLink": {
+                "description": "The gis link number code",
+                "type": "string"
+            },
+            "ApplicationNumber": {
+                "description": "A unique indentifier for the build permit application, or some ID",
+                "type": "string"
+            },
+            "Type": {
+                "description": "Short code for the folder type or type of permit being sought eg. BG, GS",
+                "type": "string"
+            },
+            "PermitDescription": {
+                "description": "The longer description of the folder type code, denotes permit type(application type) eg Building Permit, Gas Permit",
+                "type": "string"
+            },
+            "ReportCode": {
+                "description": "A report code for the permit application eg PERMIT, PROJECTING, FACIA SIGN",
+                "type": "string"
+            },
+            "StatusDescription": {
+                "description": "The status of the permit eg. Issue, Cancelled, Complete",
+                "type": "string"
+            },
+            "InDate": {
+                "description": "The date the permit was applied for(application date)",
+                "type": "string",
+                "format": "date-time"
+            },
+            "IssueDate": {
+                "description": "The date the permit was issued",
+                "type": "string",
+                "format": "date-time"
+            },
+            "CompleteDate": {
+                "description": "The date the work was completed",
+                "type": "string",
+                "format": "date-time"
+            },
+            "ExpiryDate": {
+                "description": "The date the permit expires",
+                "type": "string",
+                "format": "date-time"
+            },
+            "FeeCalculationDate": {
+                "description": "The date the fee will be calculated by",
+                "type": "string",
+                "format": "date-time"
+            },
+            "SubjectDescription": {
+                "description": "A description of the work location or what the work is on",
+                "type": "string"
+            },
+            "WorkDescription": {
+                "description": "A short description of the type of work, or permit purpose",
+                "type": "string"
+            },
+            "UnitNumber": {
+                "description": "The unit number of the location",
+                "type": "integer"
+            },
+            "HouseNumber": {
+                "description": "The house number where the work is being done",
+                "type": "integer"
+            },
+            "Street": {
+                "description": "The street where work is being done",
+                "type": "string"
+            },
+            "Address": {
+                "description": "The full address of the location for the permit usage",
+                "type": "string"
+            },
+            "NeighborhoodName": {
+                "description": "The name of the neighborhood where work is being done.",
+                "type": "string"
+            },
+            "FolioNumber": {
+                "description": "The folio number of the property",
+                "type": "string"
+            },
+            "PermitNumber": {
+                "description": "The permit number issued(PidNumber)",
+                "type": "string"
+            },
+            "LegalDescription": {
+                "description": "The legal description of the permit/work",
+                "type": "string"
+            },
+            "ParcelType": {
+                "description": "The type of parcel the work is being done on",
+                "type": "string"
+            },
+            "ActualUse": {
+                "description": "The actual use of the land the permit is being used on eg. Hotel, Office Building",
+                "type": "string"
+            },
+            "Value": {
+                "description": "The value of the work proposed",
+                "type": "number"
+            },
+            "ContactType": {
+                "description": "The tpye of contact for the permit eg. Application, Builder",
+                "type": "string"
+            },
+            "CompanyName": {
+                "description": "The name of the company, group, or person applying for the permit or whom the permit belongs to",
+                "type": "string"
+            },
+            "CompanyMailingAddress": {
+                "description": "The mailing address of the company responsible for the permit",
+                "type": "string"
+            },
+            "ContactPhoneNumber": {
+                "description": "The phone number of the contact that holds the permit",
+                "type": "string"
+            },
+            "ContactCellPhoneNumber": {
+                "description": "The cell phone number of the contact that holds the permit",
+                "type": "string"
+            },
+            "ContactEmailAddress": {
+                "description": "The email address of the contact that holds the permit",
+                "type": "string",
+                "format": "email"
+            },
+            "ContactFaxNumber": {
+                "description": "The fax number of the contact that holds the permit",
+                "type": "string"
+            },
+            "geometry": {
+                "$ref": "https://raw.githubusercontent.com/OpendataDeveloperNetwork/oden-schemas/master/schemas/geometry.json"
+            }
+        }
+    }
+}
