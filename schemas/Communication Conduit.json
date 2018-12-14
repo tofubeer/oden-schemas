@@ -1,6 +1,6 @@
 {
     "$schema": "http://json-schema.org/draft-07/schema",
-    "$id": "",
+    "$id": "https://github.com/OpendataDeveloperNetwork/oden-schemas/blob/master/schemas/Communication%20Conduit.json",
     "title": "Communication Conduit",
     "description": "Location of communication ducts",
     "type": "array",
