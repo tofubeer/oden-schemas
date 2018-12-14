@@ -1,6 +1,6 @@
 {
     "$schema": "http://json-schema.org/draft-07/schema",
-    "$id": "",
+    "$id": "https://github.com/OpendataDeveloperNetwork/oden-schemas/blob/master/schemas/City%20Boundary.json",
     "title": "City Boundary",
     "description": "The boundary of a given city",
     "type": "array",
