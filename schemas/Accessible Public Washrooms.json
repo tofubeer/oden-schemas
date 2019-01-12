@@ -22,7 +22,7 @@
                 "type": "string"
             },
             "Accessible": {
-                "description": "Is the washroom accessible",
+                "description": "Is the washroom accessible, eg true, false, or null for unknown",
                 "type": "boolean"
             },
             "GeoLocation": {
