@@ -19,7 +19,11 @@
             },
             "Description":{
                 "description": "The hours of availability or general description of use",
-                "string": "string"
+                "type": "string"
+            },
+            "Accessible": {
+                "description": "Is the washroom accessible",
+                "type": "boolean"
             },
             "GeoLocation": {
                 "oneOf": [
