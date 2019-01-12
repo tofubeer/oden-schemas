@@ -1,0 +1,48 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema",
+    "$id": "",
+    "title": "Accessible Public Washrooms",
+    "description": "Washrooms available to the public",
+    "type": "array",
+    "minItems": 1,
+    "items": {
+        "type": "object",
+        "required": [ "FacilityName", "GeoLocation" ],
+        "properties": {
+            "FacilityName": {
+                "description": "Name of location/place of the public washroom",
+                "type": "string"
+            },
+            "Address": {
+                "description": "Street address of the public washroom",
+                "type": "string"
+            },
+            "Description":{
+                "description": "The hours of availability or general description of use",
+                "string": "string"
+            },
+            "GeoLocation": {
+                "oneOf": [
+                    {
+                        "$ref": "#/definitions/feature"
+                    }
+                ]
+            }
+        }
+    },
+    "definitions": {
+        "feature": {
+            "title": "Feature",
+            "description": "A Geo JSON feature object",
+            "required": [ "geometry" ],
+            "properties": {
+                "type": { "enum": [ "Feature" ] },
+                "geometry": {
+                    "oneOf": [
+                        { "$ref": "https://raw.githubusercontent.com/OpendataDeveloperNetwork/oden-schemas/master/schemas/geometry.json" }
+                    ]
+                }
+            }
+        }
+    }
+}
