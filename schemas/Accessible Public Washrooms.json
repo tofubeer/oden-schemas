@@ -1,6 +1,6 @@
 {
     "$schema": "http://json-schema.org/draft-07/schema",
-    "$id": "",
+    "$id": "https://github.com/OpendataDeveloperNetwork/oden-schemas/blob/master/schemas/Accessible%20Public%20Washrooms.json",
     "title": "Accessible Public Washrooms",
     "description": "Washrooms available to the public",
     "type": "array",
