@@ -1,6 +1,6 @@
 {
     "$schema": "http://json-schema.org/draft-07/schema",
-    "$id": "todo",
+    "$id": "https://github.com/OpendataDeveloperNetwork/oden-schemas/blob/master/schemas/Park%20Structures.json",
     "title": "Park Structures",
     "description": "Park Structures such as picnic tables or other features",
     "type": "array",
