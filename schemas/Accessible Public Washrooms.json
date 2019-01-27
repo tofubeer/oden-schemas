@@ -9,19 +9,19 @@
         "type": "object",
         "required": [ "FacilityName", "GeoLocation" ],
         "properties": {
-            "FacilityName": {
+            "name": {
                 "description": "Name of location/place of the public washroom",
                 "type": "string"
             },
-            "Address": {
+            "address": {
                 "description": "Street address of the public washroom",
                 "type": "string"
             },
-            "Description":{
+            "description":{
                 "description": "The hours of availability or general description of use",
                 "type": "string"
             },
-            "Accessible": {
+            "accessible": {
                 "description": "Is the washroom accessible, eg true, false, or null for unknown",
                 "type": "boolean"
             },
