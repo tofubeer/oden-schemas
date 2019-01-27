@@ -1,0 +1,60 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema",
+    "$id": "todo",
+    "title": "Off Leash Dog Areas",
+    "description": "The locations of off leash dog areas as polygons",
+    "type": "array",
+    "minItems": 1,
+    "items": {
+        "type": "object",
+        "required": [ "geoLocation" ],
+        "properties": {
+            "name": {
+                "description": "The name of the dog park",
+                "type": "string"
+            },
+            "neighbourhood": {
+                "description": "The neighbourhood the dog park is located",
+                "type": "string"
+            },
+            "streetName": {
+                "description": "The street the dog park is located",
+                "type": "string"
+            },
+            "streetNumber": {
+                "description": "The street number the dog park is located",
+                "type": "string"
+            },
+            "shapeLength": {
+                "description": "The shape length of the polygon",
+                "type": "string"
+            },
+            "shapeArea": {
+                "description": "The shae area of the polygon",
+                "type": "string"
+            },
+            "geoLocation": {
+                "oneOf": [
+                    {
+                        "$ref": "#/definitions/feature"
+                    }
+                ]
+            }
+        }
+    },
+    "definitions": {
+        "feature": {
+            "title": "Feature",
+            "description": "A Geo JSON feature object",
+            "required": [ "geometry" ],
+            "properties": {
+                "type": { "enum": [ "Feature" ] },
+                "geometry": {
+                    "oneOf": [
+                        { "$ref": "https://raw.githubusercontent.com/OpendataDeveloperNetwork/oden-schemas/master/schemas/geometry.json" }
+                    ]
+                }
+            }
+        }
+    }
+}
