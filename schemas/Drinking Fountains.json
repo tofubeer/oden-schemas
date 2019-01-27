@@ -1,6 +1,6 @@
 {
     "$schema": "http://json-schema.org/draft-07/schema",
-    "$id": "todo",
+    "$id": "https://github.com/OpendataDeveloperNetwork/oden-schemas/blob/master/schemas/Drinking%20Fountains.json",
     "title": "Drinking Fountains",
     "description": "Drinking fountain information and locations",
     "type": "array",
