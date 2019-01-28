@@ -1,6 +1,6 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema",
-  "$id": "todo",
+  "$id": "https://github.com/OpendataDeveloperNetwork/oden-schemas/blob/master/schemas/Bus%20Routes.json",
   "title": "Bus Routes",
   "description": "Bus routes for a given city.",
   "type": "array",
