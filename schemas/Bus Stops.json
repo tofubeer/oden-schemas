@@ -1,48 +1,52 @@
 {
-  "type": "Feature",
-  "geometry": {
-    "type": {
-      "type": "String",
-      "example": "Point",
-      "description": "This indicates that the station is geologically a Point.It can be Point, LineString, MultiLineString"
-    },
-    "coordinates": {
-      "items": {
-        "type": "float",
-        "example": 49.222
+  "$schema": "http://json-schema.org/draft-07/schema",
+  "$id": "todo",
+  "title": "Bus Stops",
+  "description": "Bus stops for a given city",
+  "type": "array",
+  "minItems": 1,
+  "items": {
+    "type": "object",
+    "required": [ "geoLocation", "stopName" ],
+    "properties": {
+      "stopName": {
+        "description": "The name of the bus stop",
+        "type": "string"
       },
-      "type": "array",
-      "example": [49.222, -122.222]
+      "streetName": {
+        "description": "The name of the street the stop is on",
+        "type": "string"
+      },
+      "streetNumber": {
+        "description": "The street number the stop resides beside",
+        "type": "string"
+      },
+      "routeNumber": {
+        "description": "The route number the stop is on",
+        "type": "integer"
+      },
+      "geoLocation": {
+        "oneOf": [
+          {
+            "$ref": "#/definitions/feature"
+          }
+        ]
+      }
     }
   },
-  "properties": {
-    "OnStreet": {
-      "type": "string",
-      "example": "E 8th Ave"
-    },
-    "CrossStreet": {
-      "type": "string",
-      "example": "Buchanan Ave"
-    },
-    "BusStopNumber": {
-      "type": "integer",
-      "example": 53576
-    },
-    "Direction": {
-      "type": "string",
-      "example": "SB"
-    },
-    "CityName": {
-      "type": "string",
-      "example": "NEW WESTMINSTER"
-    },
-    "Accessible": {
-      "type": "string",
-      "example": "No"
-    },
-    "Status": {
-      "type": "string",
-      "example": "ACTIVE"
+  "definitions": {
+    "feature": {
+        "title": "Feature",
+        "description": "A Geo JSON feature object",
+        "required": [ "geometry" ],
+        "properties": {
+            "type": { "enum": [ "Feature" ] },
+            "geometry": {
+                "oneOf": [
+                    { "$ref": "https://raw.githubusercontent.com/OpendataDeveloperNetwork/oden-schemas/master/schemas/geometry.json" }
+                ]
+            }
+        }
     }
   }
 }
