@@ -1,32 +1,52 @@
 {
-  "type": "Feature",
-  "geometry": {
-    "type": {
-      "type": "String",
-      "example": "LineString",
-      "description": "This indicates that the Bus Route Bus Stops as geologically a Points. It can be Point, LineString, MultiLineString"
-    },
-    "coordinates": {
-      "items": {
-        "type": "float",
-        "example": 49.222
+  "$schema": "http://json-schema.org/draft-07/schema",
+  "$id": "todo",
+  "title": "Bus Routes",
+  "description": "Bus routes for a given city.",
+  "type": "array",
+  "minItems": 1,
+  "items": {
+    "type": "object",
+    "required": [ "geoLocation", "routeName", "routeNumber" ],
+    "properties": {
+      "routeName": {
+        "description": "The name of the route eg city centre to aberdeen",
+        "type": "string"
       },
-      "type": "array",
-      "example": [
-        [ -122.92898869812124, 49.19489568573479 ]
-      ]
-
+      "routeNumber": {
+        "description": "The route number",
+        "type": "integer"
+      },
+      "busHeadSign": {
+        "description": "The text on the head sign on the front of the bus",
+        "type": "string"
+      },
+      "shapeLength": {
+        "description": "The shape length of the route segment",
+        "type": "number"
+      },
+      "geoLocation": {
+        "oneOf": [
+          {
+            "$ref": "#/definitions/feature"
+          }
+        ]
+      }
     }
   },
-  "properties": {
-    "Length": {
-      "type": "number",
-      "example": "632.67204431"
-    },
-    "LineNumber": {
-      "description": "Bus Route Number",
-      "type": "integer",
-      "example": "104"
+  "definitions": {
+    "feature": {
+        "title": "Feature",
+        "description": "A Geo JSON feature object",
+        "required": [ "geometry" ],
+        "properties": {
+            "type": { "enum": [ "Feature" ] },
+            "geometry": {
+                "oneOf": [
+                    { "$ref": "https://raw.githubusercontent.com/OpendataDeveloperNetwork/oden-schemas/master/schemas/geometry.json" }
+                ]
+            }
+        }
     }
-  }
+}
 }
